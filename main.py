@@ -15,10 +15,9 @@ def hello_repler():
 # This is a new page with our function on it  
 @app.route('/new-page')
 def new_page():
-  output = my_function_using_the_name("Penny")
+  output = my_function_using_the_name("SpongeBob")
   return str(output)
 
 if __name__ == '__main__':
-  app.debug = True
   app.run(host='0.0.0.0', port=8080)
     
